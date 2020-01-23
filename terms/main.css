@@ -1,0 +1,100 @@
+body,
+html,
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 32px 16px;
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/mainbg.svg");
+  position: relative;
+}
+.logo {
+  max-width: 100%;
+}
+a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+h3 {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.download {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    background-size: 160%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main {
+    background-size: 240%;
+    padding: 66px 16px;
+  }
+  .h2 {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+  }
+  h3 {
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 3px;
+  }
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.bottomSection a {
+  align-self: center;
+}
+
+.bottomSection a h2 {
+  text-decoration: underline;
+}
+
+.bottomSection .sayhi {
+  align-self: end;
+}
